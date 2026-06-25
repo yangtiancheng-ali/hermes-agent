@@ -263,7 +263,7 @@ def _setup_platform(hermes_home: str, config: dict, flags: dict[str, str]) -> No
             continue
 
         if flags.get("api_url") and key == "api_url":
-            provider_config["MEM0_API_URL"] = flags["api_url"]
+            provider_config["api_url"] = flags["api_url"]
             continue
 
         if choices and not is_secret:
